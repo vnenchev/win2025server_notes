@@ -36,3 +36,7 @@
 - Confirm tab
   - Check again your config before installation and check the box for `Start after created`
 - When the VM is created, given that you are in the console mode for your VM, the installation will wait for you to boot from media and afterwards to press any key to start installation process
+- Notes during installation: when you reach disk selection in your installation, browse your `virtio-win.iso` for the driver it is in `amd64\2k25`
+- Post installation: you need to install your network driver, it is in `virtio-win.iso-drive\virtio-win-gt-x64` for the 64 bit version
+- Very important is to set your server's IP to static IP
+- Usually chaning the name of the server is also a good idea since it follows the schema `WIN-(A-Z,0-9)` - maybe again `DC01` is fine, use the following Powershell command `Rename-Computer -NewName "yournamehere"`
